@@ -1,0 +1,53 @@
+
+.burger-menu-collection {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.item-menu-col {
+    margin: 10px 15px;
+    position: relative;
+}
+
+.item-menu-img img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    height: auto;
+}
+
+.name-item-menu {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: normal;
+    line-height: .9em;
+    text-shadow: -4px -4px 0 #d90f06, -4px -3px 0 #d90f06, -4px -2px 0 #d90f06, -4px -1px 0 #d90f06, -4px 0 0 #d90f06, -4px 1px 0 #d90f06, -4px 2px 0 #d90f06, -4px 3px 0 #d90f06, -4px 4px 0 #d90f06, -3px -4px 0 #d90f06, -3px -3px 0 #d90f06, -3px -2px 0 #d90f06, -3px -1px 0 #d90f06, -3px 0 0 #d90f06, -3px 1px 0 #d90f06, -3px 2px 0 #d90f06, -3px 3px 0 #d90f06, -3px 4px 0 #d90f06, -2px -4px 0 #d90f06, -2px -3px 0 #d90f06, -2px -2px 0 #d90f06, -2px -1px 0 #d90f06, -2px 0 0 #d90f06, -2px 1px 0 #d90f06, -2px 2px 0 #d90f06, -2px 3px 0 #d90f06, -2px 4px 0 #d90f06, -1px -4px 0 #d90f06, -1px -3px 0 #d90f06, -1px -2px 0 #d90f06, -1px -1px 0 #d90f06, -1px 0 0 #d90f06, -1px 1px 0 #d90f06, -1px 2px 0 #d90f06, -1px 3px 0 #d90f06, -1px 4px 0 #d90f06, 0 -4px 0 #d90f06, 0 -3px 0 #d90f06, 0 -2px 0 #d90f06, 0 -1px 0 #d90f06, 0 0 0 #d90f06, 0 1px 0 #d90f06, 0 2px 0 #d90f06, 0 3px 0 #d90f06, 0 4px 0 #d90f06, 1px -4px 0 #d90f06, 1px -3px 0 #d90f06, 1px -2px 0 #d90f06, 1px -1px 0 #d90f06, 1px 0 0 #d90f06, 1px 1px 0 #d90f06, 1px 2px 0 #d90f06, 1px 3px 0 #d90f06, 1px 4px 0 #d90f06, 2px -4px 0 #d90f06, 2px -3px 0 #d90f06, 2px -2px 0 #d90f06, 2px -1px 0 #d90f06, 2px 0 0 #d90f06, 2px 1px 0 #d90f06, 2px 2px 0 #d90f06, 2px 3px 0 #d90f06, 2px 4px 0 #d90f06, 3px -4px 0 #d90f06, 3px -3px 0 #d90f06, 3px -2px 0 #d90f06, 3px -1px 0 #d90f06, 3px 0 0 #d90f06, 3px 1px 0 #d90f06, 3px 2px 0 #d90f06, 3px 3px 0 #d90f06, 3px 4px 0 #d90f06, 4px -4px 0 #d90f06, 4px -3px 0 #d90f06, 4px -2px 0 #d90f06, 4px -1px 0 #d90f06, 4px 0 0 #d90f06, 4px 1px 0 #d90f06, 4px 2px 0 #d90f06, 4px 3px 0 #d90f06, 4px 4px 0 #d90f06;
+}
+
+
+.item-section-button-menu {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.item-button-menu {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background: #21388b;
+    color: #fff;
+    width: 40%;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 25px;
+
+}

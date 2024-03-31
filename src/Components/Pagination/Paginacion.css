@@ -1,0 +1,27 @@
+.container-paginacion{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.boton-previo-next{
+    display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+   gap: 20px;
+   margin-top:70px;
+   padding-left: 250px;
+}
+
+
+.encabezadado-promo{
+    display: flex;
+}
+.flechas-promo {
+    height: 40px;
+    width: 40px;
+}
+
+.cotenedor-botones-paginacion{
+  
+}

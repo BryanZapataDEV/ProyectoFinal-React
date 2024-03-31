@@ -1,0 +1,172 @@
+.container-footer {
+    background-color: #173083;
+}
+
+.img-logo-footer {
+    width: 50px;
+    height: 50px;
+    filter: invert(15%) sepia(79%) saturate(2147%) hue-rotate(215deg) brightness(92%) contrast(96%);
+}
+
+.network-footer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.fb-bembos, .yt-bembos, .twitter-bembos-footer, .instagram-bembos {
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.icono-pago {
+    height: 50px;
+    width: 50px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(341deg) brightness(104%) contrast(101%);
+}
+
+.safety svg {
+    width: 250px;
+    height: 100px;
+}
+
+.grid-footer-bembos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+}
+
+.info-prin-secun-bembos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+}
+
+.text-forma-pago h3 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.iconos-forma-pago {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.safety {
+    text-align: center;
+}
+
+.logo-bembos {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container-comprobantes {
+    text-align: center;
+}
+
+.container-comprobantes button {
+    height: 50px;
+    background-color: #fbb905 !important;
+    width: 250px;
+    color: #173083 !important;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.info-principal ul {
+    list-style: none;
+    font-size: 25px;
+}
+
+.info-info-secundaria ul {
+    list-style: none;
+    font-size: 25px;
+}
+
+.text-noticias h3 {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.input-correo {
+    width: 300px;
+    height: 50px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.btn-enviar {
+    background-color: #fbb905 !important;
+    color: black;
+    width: 120px;
+    height: 50px;
+    font-size: 15px;
+}
+
+.chk-footer {
+    font-size: 25px;
+    padding-top: 20px;
+    color: white;
+}
+
+.chk-footer label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.chk-footer input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+}
+
+.libro-reclamaciones {
+    padding-top: 50px;
+    width: 300px;
+    height: 300px;
+}
+
+.derechos-reservados hr {
+    border: 2px solid white;
+}
+
+.derechos-reservados p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Media Queries para tamaños de pantalla */
+
+@media screen and (min-width: 768px) {
+    .grid-footer-bembos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .grid-footer-bembos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid-footer-bembos {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Otros ajustes de estilo para tamaños de pantalla más pequeños */
+/* Puedes agregar aquí más ajustes según sea necesario */

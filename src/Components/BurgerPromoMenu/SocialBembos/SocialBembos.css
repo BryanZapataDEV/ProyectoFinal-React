@@ -1,0 +1,77 @@
+.contanier-social-media{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border-radius: 12px;
+    border: 1px solid #173083;
+}
+
+.text-social-bembos{
+background-color: #fbb905;
+color:#173083;
+text-align: center;
+}
+
+.text-social-bembos h2{
+    color:#173083;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+.button-text-social-bembos p{
+    font-size: 20px;
+}
+
+.button-text-social-bembos{
+    display:flex;
+    flex-direction: column;
+}
+
+.button-text-social-bembos button{
+    width: 30%;
+    color:white;
+    padding-right: 30px;
+    height: 40px;
+    text-align: center;
+}
+
+.btn-twitter, .btn-facebook{
+    margin-left: 50px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
+.btn-twitter{
+    background-color: #5897fb !important;
+}
+.title-text-social-bembos h2{
+    line-height: 0.5;
+    margin-top: 30px;
+}
+
+.button-text-social-bembos{
+    margin-top: 10px;
+}
+
+.red-social-bembos{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.frame-facebook {
+    padding-top:50px;
+    width:500px;
+    height: 250px; /* Define la altura que desees */
+  }
+
+  @media only screen and (max-width: 767px) {
+    .contanier-social-media{
+        display: none;
+    }
+    .promos-bembos-banner{
+        display: none;
+    }
+
+}
