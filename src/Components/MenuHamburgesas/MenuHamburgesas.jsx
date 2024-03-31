@@ -65,9 +65,9 @@ export const MenuHamburgesas = () => {
             <MenuHambOnline key={burger.id} burger={burger} />
           ))}
         </div>
-        <div className='paginas-promocion'>
+        {/* <div className='paginas-promocion'>
           {<h3>{currentPage} / {nPaginas}</h3>}
-        </div>
+        </div> */}
 
       </div>
       <div className='promos-bembos-banner'>

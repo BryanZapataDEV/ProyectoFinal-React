@@ -17,11 +17,12 @@ export const Slider = () => {
 
   const [showSlider, setShowSlider] = useState(true); // Estado para controlar la visibilidad del slider
   const location = useLocation();
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-  useEffect(() => {
-    // Ocultar el slider cuando cambie a la vista del menú
-    setShowSlider(location.pathname !== "/menu");
-  }, [location]);
+  // useEffect(() => {
+  //   // Ocultar el slider cuando cambie a la vista del menú
+  //   setShowSlider(location.pathname !== "/menu");
+  // }, [location]);
 
 
   // Función para ir a la imagen anterior
@@ -38,6 +39,17 @@ export const Slider = () => {
     );
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Cambiar a la siguiente diapositiva
+      setCurrentSlide((prevSlide) =>
+        prevSlide === images.length - 1 ? 0 : prevSlide + 1
+      );
+    }, 3000); // Cambia la diapositiva cada 3 segundos
+
+    return () => clearInterval(interval); // Limpia el intervalo cuando el componente se desmonta o actualiza
+  }, [images.length]);
+
   return (
     <section className="slider-container" >
       <div className="img-slide">
@@ -47,7 +59,15 @@ export const Slider = () => {
         <div className="next-image">
           <img src={rightArrowIcon} className='icon-next' onClick={goToNext} alt="Flecha Derecha" />
         </div>
-        <img src={images[currentIndex]} alt={`imagen ${currentIndex + 1}`} />
+        {images.map((slide, index) => (
+          <div
+            key={index}
+            className={index === currentSlide ? 'slide active' : 'slide'}
+          >
+          {index === currentSlide &&
+            <img src={images[currentSlide]} alt={`imagen ${currentSlide + 1}`} />}
+          </div>
+        ))}
       </div>
     </section>
   )
